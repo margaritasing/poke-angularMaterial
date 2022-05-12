@@ -17,7 +17,11 @@ import {MatCardModule} from '@angular/material/card';
     CardComponent
   ],
   imports: [
-    CommonModule, HttpClientModule,  MatToolbarModule, MatGridListModule, MatCardModule
+    CommonModule, 
+    HttpClientModule, 
+    MatToolbarModule, 
+    MatGridListModule, 
+    MatCardModule
   ],
 
   exports: [
