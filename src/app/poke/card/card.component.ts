@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { PokeService } from '../../service/poke.service';
 
 @Component({
   selector: 'app-card',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  info: any;
+
+  constructor(private PokeService: PokeService) {     
+  }
 
   ngOnInit(): void {
+    this.PokeService.getPokeData(this.info.name).subscribe((res:any) => {
+      console.log(res.sprites.front_default)
+
+    })
   }
 
 }
