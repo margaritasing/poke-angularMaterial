@@ -11,12 +11,14 @@ export class CardComponent implements OnInit {
   @Input()
   info: any;
 
+  url: string = "";
+
   constructor(private PokeService: PokeService) {     
   }
 
   ngOnInit(): void {
     this.PokeService.getPokeData(this.info.name).subscribe((res:any) => {
-      console.log(res.sprites.front_default)
+      this.url = res.sprites.front_default;
 
     })
   }
