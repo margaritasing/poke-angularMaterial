@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http'
+
 import { GridComponent } from './grid/grid.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CardComponent } from './card/card.component';
@@ -15,7 +17,7 @@ import {MatCardModule} from '@angular/material/card';
     CardComponent
   ],
   imports: [
-    CommonModule, MatToolbarModule, MatGridListModule, MatCardModule
+    CommonModule, HttpClientModule,  MatToolbarModule, MatGridListModule, MatCardModule
   ],
 
   exports: [

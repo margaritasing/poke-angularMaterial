@@ -1,0 +1,9 @@
+.example-card {
+    max-width: 400px;
+  }
+
+  mat-card {
+    background-color: blueviolet;
+  }
+
+ /*  https://pokeapi.co/api/v2/pokemon/?offset=0&limit=20 */
