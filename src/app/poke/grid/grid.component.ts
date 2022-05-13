@@ -22,12 +22,12 @@ export class GridComponent {
   }
 
   nextPage(){
-    this.page += 8;
+    this.page += 20;
     this.setData()        
   }
 
   prevPage(){
-    this.page -= 8;
+    this.page -= 20;
     this.setData()
   }
 

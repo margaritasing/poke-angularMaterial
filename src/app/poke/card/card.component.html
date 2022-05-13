@@ -1,7 +1,9 @@
-<mat-card class="example-card">
-    <img mat-card-image [src]="url" [alt]="info.name">
-    <mat-card-content>
-        <mat-card-title >{{info.name}}</mat-card-title>
-      </mat-card-content>
-</mat-card>
-
+<div class="cart">
+  <mat-card class="example-card">
+      <img loading="lazy" mat-card-image [src]="url" [alt]="info.name">
+      <mat-card-content>
+          <mat-card-title >{{info.name}}</mat-card-title>
+        </mat-card-content>
+        <button mat-raised-button color="accent">Ver Mas...</button>  
+  </mat-card>
+</div>

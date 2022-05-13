@@ -7,15 +7,22 @@ import { HttpClient } from '@angular/common/http';
 export class PokeService {
 
   private baseUrl: string = "https://pokeapi.co/api/v2"
+
+  
+  
  
   constructor(private http: HttpClient) { }
 
 
   getList(page: number = 0){
-    return this.http.get(`${this.baseUrl}/pokemon/?offset=${page}&limit=8`);
+    return this.http.get(`${this.baseUrl}/pokemon/?offset=${page}&limit=20`);
+    
   }
+
+  
 
   getPokeData(name: string){
     return this.http.get(`${this.baseUrl}/pokemon/${name}`);
   }
+
 }

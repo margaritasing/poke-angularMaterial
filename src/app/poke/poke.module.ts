@@ -13,13 +13,16 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { SearchComponent } from './search/search.component';
+import { ButtonComponent } from './button/button.component';
+
 
 @NgModule({
   declarations: [
     GridComponent,
     NavbarComponent,
     CardComponent,
-    SearchComponent
+    SearchComponent,
+    ButtonComponent
   ],
   imports: [
     CommonModule, 
