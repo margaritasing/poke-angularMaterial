@@ -1,0 +1,14 @@
+.search-box{
+    display: block;
+    margin: 40px auto 0 auto;
+    padding: 10px 20px;
+    max-width: 600px;
+    width: 95%;
+    border-radius: 25px;
+}
+
+.search-result{
+    max-width: 600px;
+    width: 95%;
+    margin: 20px auto 0 auto;
+}
